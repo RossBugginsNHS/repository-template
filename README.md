@@ -1,4 +1,4 @@
-# NHS Notify
+# NHS Notify Repository Template
 
 [![CI/CD Pull Request](https://github.com/nhs-england-tools/repository-template/actions/workflows/cicd-1-pull-request.yaml/badge.svg)](https://github.com/nhs-england-tools/repository-template/actions/workflows/cicd-1-pull-request.yaml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=repository-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=repository-template)
@@ -16,7 +16,7 @@ Make use of this repository template to expedite your project setup and enhance 
 
 ## Table of Contents
 
-- [NHS Notify](#nhs-notify)
+- [NHS Notify Repository Template](#nhs-notify-repository-template)
   - [Table of Contents](#table-of-contents)
   - [Documentation](#documentation)
   - [Setup](#setup)
@@ -33,7 +33,7 @@ Make use of this repository template to expedite your project setup and enhance 
 
 ## Documentation
 
-- [Built](https://nhsdigital.github.io/nhs-notify/)
+- [Built](/)
 - [Source](/docs/README.md)
 
 ## Setup
