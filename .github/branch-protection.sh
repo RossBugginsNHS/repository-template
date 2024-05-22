@@ -25,9 +25,6 @@ curl --location "https://api.github.com/repos/NHSDigital/$1/rulesets" \
             "type": "non_fast_forward"
         },
         {
-            "type": "required_signatures"
-        },
-        {
             "type": "pull_request",
             "parameters": {
                 "required_approving_review_count": 1,
@@ -35,6 +32,20 @@ curl --location "https://api.github.com/repos/NHSDigital/$1/rulesets" \
                 "require_code_owner_review": true,
                 "require_last_push_approval": true,
                 "required_review_thread_resolution": true
+            }
+        },
+        {
+            "type": "required_signatures"
+        },
+        {
+            "type": "required_status_checks",
+            "parameters": {
+                "strict_required_status_checks_policy": true,
+                "required_status_checks": [
+                    {
+                        "context": "*"
+                    }
+                ]
             }
         }
     ]
