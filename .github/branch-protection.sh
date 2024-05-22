@@ -41,11 +41,7 @@ curl --location "https://api.github.com/repos/NHSDigital/$1/rulesets" \
             "type": "required_status_checks",
             "parameters": {
                 "strict_required_status_checks_policy": true,
-                "required_status_checks": [
-                    {
-                        "context": "*"
-                    }
-                ]
+                "required_status_checks": []
             }
         }
     ]
