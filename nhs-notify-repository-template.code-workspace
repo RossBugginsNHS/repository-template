@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "NHS Notify Repo Template",
+      "path": "."
+    },
+    {
+      "name": "NHS Notify Repo Template Docs",
+      "path": "docs"
+    }
+  ]
+}
