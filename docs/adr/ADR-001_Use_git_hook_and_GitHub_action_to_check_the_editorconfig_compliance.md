@@ -1,9 +1,14 @@
 ---
-layout: default
+layout: page
 title: ADR-001
 parent: ADRs
 description: Use git hook and GitHub Action to check the .editorconfig compliance
 summary: Use git hook and GitHub Action to check the .editorconfig compliance
+
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 ---
 
 ## ADR-001: Use git hook and GitHub Action to check the `.editorconfig` compliance

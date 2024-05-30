@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 ---
 
-<h1>{{page.name}} Repository</h1>
+<h2>{{page.name}} Repository</h2>
 
 <p>
 {{page.description}}
@@ -21,8 +21,6 @@ layout: default
 </ul>
 
 <p>{{ page.date }} - Written by {{ page.author }}</p>
-
-<h2>Content</h2>
 
 {{ content }}
 
