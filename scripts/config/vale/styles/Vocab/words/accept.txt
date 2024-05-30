@@ -15,4 +15,8 @@ idempotence
 onboarding
 toolchain
 [A-Z]+s
-Github
+GitHub
+endraw
+draw.io
+endfor
+drawio
