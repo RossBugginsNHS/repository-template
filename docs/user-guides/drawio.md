@@ -4,9 +4,9 @@ title: Draw IO
 parent: User Guides
 
 ---
-## Using Draw io
+## Using draw.io
 
-Reference a drawio file by:
+Reference a draw.io file by:
 
 {% raw %}
 
