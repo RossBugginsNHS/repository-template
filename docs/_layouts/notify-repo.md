@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h2>{{page.name}} Repository</h2>
+<h1>{{page.name}} Repository</h1>
 
 <p>
 {{page.description}}
