@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: page
 title:  Scan dependencies
 parent: User Guides
+description:  Scan dependencies
+summary:  Scan dependencies
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 ---
 
 ## Guide: Scan dependencies

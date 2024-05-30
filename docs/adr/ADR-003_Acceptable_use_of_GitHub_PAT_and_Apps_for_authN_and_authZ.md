@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: page
 title: ADR-003
 parent: ADRs
 description: Acceptable use of GitHub authentication and authorisation mechanisms
 summary: Acceptable use of GitHub authentication and authorisation mechanisms
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 ---
 
 ## ADR-003: Acceptable use of GitHub authentication and authorisation mechanisms

@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: page
 title:  Perform static analysis
 parent: User Guides
+description:  Perform static analysis
+summary:  Perform static analysis
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 ---
 
 ## Guide: Perform static analysis

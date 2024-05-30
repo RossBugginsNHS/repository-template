@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: page
 title: Draw IO
 parent: User Guides
+description: Draw IO
+summary: Draw IO
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 
 ---
 ## Using draw.io

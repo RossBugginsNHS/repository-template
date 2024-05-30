@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: page
 title:  Scripting Terraform
 parent: Developer Guides
+description: Scripting Terraform
+summary: Scripting Terraform
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
 ---
 
 ## Developer Guide: Scripting Terraform
