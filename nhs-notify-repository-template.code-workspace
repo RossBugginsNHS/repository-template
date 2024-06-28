@@ -1,15 +1,25 @@
 {
   "folders": [
     {
-      "name": "NHS Notify Repo Template",
+      "name": "NHS Notify Repository Template",
       "path": "."
     },
     {
-      "name": "NHS Notify Repo Template Docs",
+      "name": "Docs",
       "path": "docs"
     }
   ],
   "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/.ruby-lsp": true,
+      "docs": true
+    },
     "workspace-terminals.switchTerminal": "always",
     "workspace-terminals.auto": "always",
     "markdownlint.config": {

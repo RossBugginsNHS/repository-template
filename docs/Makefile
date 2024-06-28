@@ -4,6 +4,7 @@ h help:
 	@egrep '^\S|^$$' Makefile
 
 install:
+	npm install
 	bundle config set --local path vendor/bundle
 	bundle install
 
