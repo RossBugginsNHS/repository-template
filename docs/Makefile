@@ -1,3 +1,5 @@
+BASE_URL ?= ""
+
 default: install
 
 h help:
@@ -12,11 +14,17 @@ s serve:
 	bundle exec jekyll serve --trace --livereload
 
 build: version
-	npm run build
+	npm run build -- --baseurl $(BASE_URL)
+
+build_existing_version: copyversion
+	npm run build -- --baseurl $(BASE_URL)
 
 debug: version
-	npm run debug
+	npm run debug -- --baseurl $(BASE_URL)
 
 version:
 	(cd .. && make version)
+	make copyversion
+
+copyversion:
 	cp -f ../.version ./_includes/.version
