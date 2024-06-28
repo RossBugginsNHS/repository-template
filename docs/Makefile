@@ -15,11 +15,15 @@ install:
 s serve:
 	bundle exec jekyll serve --trace --livereload
 
+define baseurlparam =
+$(if $(BASE_URL),-- --baseurl $(BASE_URL),-- --baseurl "/")
+endef
+
 build: version
-	npm run build -- --baseurl $(BASE_URL)
+	npm run build $(baseurlparam)
 
 debug: version
-	npm run debug -- --baseurl $(BASE_URL)
+	npm run debug $(baseurlparam)
 
 version:
 	touch _config.version.yml
@@ -30,4 +34,3 @@ version:
 	else \
 		echo "version: $(VERSION)" > _config.version.yml; \
 	fi
-
