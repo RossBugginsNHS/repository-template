@@ -17,8 +17,4 @@ author: Ross Buggins
 
 ## NHS Notify Template Repository Documentation Home Page
 
-{% capture rawContent %}
-{% include  .version %}
-{% endcapture %}
-
-### Version: {{ rawContent }}
+### Version: {{ site.version }}

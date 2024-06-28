@@ -5,8 +5,8 @@
   "private": true,
   "engines": {},
   "scripts": {
-    "debug": "JEKYLL_ENV=development BUNDLE_GEMFILE=Gemfile bundle exec jekyll serve --config _config.yml,_config.dev.yml --limit_posts 100 --trace --livereload",
-    "build": "JEKYLL_ENV=production bundle exec jekyll build --trace"
+    "debug": "JEKYLL_ENV=development BUNDLE_GEMFILE=Gemfile bundle exec jekyll serve --config _config.yml,_config.dev.yml,_config.version.yml --limit_posts 100 --trace --livereload",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build --trace --config _config.yml,_config.version.yml"
   },
   "keywords": [],
   "author": "",

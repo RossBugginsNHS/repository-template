@@ -1,4 +1,6 @@
-BASE_URL ?= ""
+BASE_URL ?= "/"
+VERSION ?= ""
+SHELL = /bin/bash
 
 default: install
 
@@ -16,15 +18,16 @@ s serve:
 build: version
 	npm run build -- --baseurl $(BASE_URL)
 
-build_existing_version: copyversion
-	npm run build -- --baseurl $(BASE_URL)
-
 debug: version
 	npm run debug -- --baseurl $(BASE_URL)
 
 version:
-	(cd .. && make version)
-	make copyversion
+	touch _config.version.yml
+	if [[ $(VERSION) == "" ]]; then \
+		(cd .. && make version); \
+		ver=$$(head -n 1 ../.version 2> /dev/null || echo unknown); \
+		echo "version: $$ver" > _config.version.yml; \
+	else \
+		echo "version: $(VERSION)" > _config.version.yml; \
+	fi
 
-copyversion:
-	cp -f ../.version ./_includes/.version
