@@ -16,3 +16,5 @@ author: Ross Buggins
 [![CI/CD Pull Request](https://github.com/NHSDigital/nhs-notify-repository-template/actions/workflows/cicd-1-pull-request.yaml/badge.svg)](https://github.com/NHSDigital/nhs-notify-repository-template/actions/workflows/cicd-1-pull-request.yaml)
 
 ## NHS Notify Template Repository Documentation Home Page
+
+### Version: {{ site.version }}
