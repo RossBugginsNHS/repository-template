@@ -21,3 +21,5 @@ endraw
 draw.io
 endfor
 drawio
+rawContent
+endcapture
