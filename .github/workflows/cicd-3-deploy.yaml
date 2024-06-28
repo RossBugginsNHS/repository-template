@@ -2,14 +2,14 @@ name: "2. Deploy docs to GitHub Pages"
 
 on:
   workflow_dispatch:
-     inputs:
-       include_prereleases:
-         type: choice
-         description: "Include pre-releases"
-         default: 'true'
-         options:
-         - 'true'
-         - 'false'
+    inputs:
+      include_prereleases:
+        type: choice
+        description: "Include pre-releases"
+        default: "true"
+        options:
+          - "true"
+          - "false"
 
 permissions:
   contents: read
@@ -67,7 +67,6 @@ jobs:
     steps:
       - name: "Checkout code"
         uses: actions/checkout@v4
-
 
       - name: "Get version"
         id: get-asset-version
