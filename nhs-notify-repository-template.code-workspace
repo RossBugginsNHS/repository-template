@@ -6,20 +6,41 @@
     },
     {
       "name": "Docs",
-      "path": "docs"
+      "path": "./docs"
+    },
+    {
+      "name": "Tests",
+      "path": "./tests"
+    },
+    {
+      "name": "Infra",
+      "path": "./infrastructure"
+    },
+    {
+      "name": "Scripts",
+      "path": "./scripts"
+    },
+    {
+      "name": "GitHub",
+      "path": ".github"
+    },
+    {
+      "name": "Git Hooks",
+      "path": "./.git/hooks"
+    },
+    {
+      "name": "Dev Container",
+      "path": ".devcontainer"
+    },
+    {
+      "name": "Terraform",
+      "path": "terraform"
     }
   ],
   "settings": {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/Thumbs.db": true,
-      "**/.ruby-lsp": true,
-      "docs": true
-    },
+
+    "autoOpenWorkspace.enableAutoOpenIfSingleWorkspace": true,
+    "githubCodeOwners.format.enabled": true,
     "workspace-terminals.switchTerminal": "always",
     "workspace-terminals.auto": "always",
     "markdownlint.config": {
@@ -28,13 +49,46 @@
       "MD033": false
     },
     "cSpell.words": [
+      "ADRS",
+      "Amaan",
       "Codespaces",
-      "endfor"
+      "endfor",
+      "Nasar",
+      "preinstalled",
+      "pythonist",
+      "rossbugginsnhs",
+      "ruleset",
+      "Stefaniuk"
     ],
-    "githubPullRequests.upstreamRemote": "never"
+    "cSpell.language": "en-GB",
+    "editor.wordWrap": "off",
+    "editor.formatOnSave": false,
+    "[plaintext]": {
+      "editor.wordWrap": "off",
+      "editor.formatOnSave": false,
+      "editor.unicodeHighlight.ambiguousCharacters": false,
+      "editor.unicodeHighlight.invisibleCharacters": false
+    },
+    "[markdown]": {
+      "editor.wordWrap": "off",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.wordWrap": "off",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.wordWrap": "off",
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+      "editor.wordWrap": "off",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
   },
   "extensions": {
     "recommendations": [
+      "zoma.vscode-auto-open-workspace",
       "alefragnani.bookmarks",
       "davidanson.vscode-markdownlint",
       "dbaeumer.vscode-eslint",
@@ -66,7 +120,9 @@
       "yzane.markdown-pdf",
       "yzhang.dictionary-completion",
       "yzhang.markdown-all-in-one",
-      "joshx.workspace-terminals"
+      "joshx.workspace-terminals",
+      "takumii.markdowntable",
+      "chdsbd.github-code-owners"
     ],
     "unwantedRecommendations": []
   }
