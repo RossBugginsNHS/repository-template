@@ -29,6 +29,7 @@ config:: _install-dependencies version # Configure development environment (main
 version:
 	rm -f .version
 	make version-create-effective-file dir=.
+	echo "{ \"schemaVersion\": 1, \"label\": \"version\", \"message\": \"$$(head -n 1 .version 2> /dev/null || echo unknown)\", \"color\": \"orange\" }" > version.json
 # ==============================================================================
 
 ${VERBOSE}.SILENT: \

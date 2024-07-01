@@ -92,7 +92,7 @@ callouts:
 
 include:
   - .version
-
+  - version.json
 exclude:
   - Makefile
   - package-lock.json
