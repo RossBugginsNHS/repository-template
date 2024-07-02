@@ -15,15 +15,12 @@
   // Configure tool-specific properties.
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        "README.md",
-        ".github/SECURITY.md",
-        "docs/index.md"
-      ]
+      "openFiles": ["README.md", ".github/SECURITY.md", "docs/index.md"]
     },
     "vscode": {
       // Set *default* container specific settings.json values on container create.
       "settings": {
+        "autoOpenWorkspace.enableAutoOpenIfSingleWorkspace": true,
         "editor.formatOnSave": true,
         "files.insertFinalNewline": true,
         "[makefile]": {
@@ -33,6 +30,7 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
+        "zoma.vscode-auto-open-workspace",
         "alefragnani.bookmarks",
         "davidanson.vscode-markdownlint",
         "dbaeumer.vscode-eslint",
@@ -64,7 +62,8 @@
         "yzane.markdown-pdf",
         "yzhang.dictionary-completion",
         "yzhang.markdown-all-in-one",
-        "joshx.workspace-terminals"
+        "joshx.workspace-terminals",
+        "takumii.markdowntable"
       ]
     }
   },

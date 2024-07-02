@@ -1,17 +1,39 @@
+BASE_URL ?= "/"
+VERSION ?= ""
+SHELL = /bin/bash
+
 default: install
 
 h help:
 	@egrep '^\S|^$$' Makefile
 
 install:
+	npm install
 	bundle config set --local path vendor/bundle
 	bundle install
 
 s serve:
 	bundle exec jekyll serve --trace --livereload
 
-build:
-	JEKYLL_ENV=production bundle exec jekyll build --trace
+define baseurlparam =
+$(if $(BASE_URL),-- --baseurl $(BASE_URL),-- --baseurl "/")
+endef
 
-debug:
-	npm run debug
+build: version
+	npm run build $(baseurlparam)
+
+debug: version
+	npm run debug $(baseurlparam)
+
+version:
+	touch _config.version.yml
+	if [[ $(VERSION) == "" ]]; then \
+		(cd .. && make version); \
+		ver=$$(head -n 1 ../.version 2> /dev/null || echo unknown); \
+		echo "version: $$ver" > _config.version.yml; \
+		echo "$(VERSION)" > .version; \
+	else \
+		echo "version: $(VERSION)" > _config.version.yml; \
+		echo "$(VERSION)" > .version; \
+	fi
+	echo "{ \"schemaVersion\": 1, \"label\": \"version\", \"message\": \"$$(head -n 1 .version 2> /dev/null || echo unknown)\", \"color\": \"orange\" }" > version.json
