@@ -1,34 +1,13 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-  // Uncomment the next line to run commands after the container is created.
-  "postCreateCommand": "zsh scripts/devcontainer/postcreatecommand.sh",
-  "postStartCommand": "zsh scripts/devcontainer/poststartcommand.sh",
-  "forwardPorts": [4000],
-  // Configure tool-specific properties.
   "customizations": {
     "codespaces": {
-      "openFiles": ["README.md", ".github/SECURITY.md", "docs/index.md"]
+      "openFiles": [
+        "README.md",
+        ".github/SECURITY.md",
+        "docs/index.md"
+      ]
     },
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
-      "settings": {
-        "autoOpenWorkspace.enableAutoOpenIfSingleWorkspace": true,
-        "editor.formatOnSave": true,
-        "files.insertFinalNewline": true,
-        "[makefile]": {
-          "editor.insertSpaces": false,
-          "editor.detectIndentation": false
-        }
-      },
-      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "zoma.vscode-auto-open-workspace",
         "alefragnani.bookmarks",
@@ -64,41 +43,55 @@
         "yzhang.markdown-all-in-one",
         "joshx.workspace-terminals",
         "takumii.markdowntable"
-      ]
+      ],
+      "settings": {
+        "[makefile]": {
+          "editor.detectIndentation": false,
+          "editor.insertSpaces": false
+        },
+        "autoOpenWorkspace.enableAutoOpenIfSingleWorkspace": true,
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true
+      }
     }
   },
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {
       "version": "latest"
     },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "installZsh": true,
+      "upgradePackages": true,
+      "userGid": "automatic",
+      "userUid": "automatic",
+      "username": "automatic"
+    },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "moby": true,
       "azureDnsAutoDetection": true,
+      "dockerDashComposeVersion": "latest",
       "installDockerBuildx": true,
       "installDockerComposeSwitch": true,
-      "version": "latest",
-      "dockerDashComposeVersion": "latest"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "nodeGypDependencies": true,
-      "version": "lts",
-      "nvmVersion": "latest"
+      "moby": true,
+      "version": "latest"
     },
     "ghcr.io/devcontainers/features/github-cli:1": {
       "installDirectlyFromGitHubRelease": true,
       "version": "latest"
     },
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "configureZshAsDefaultShell": true,
-      "installOhMyZsh": true,
-      "installOhMyZshConfig": true,
-      "upgradePackages": true,
-      "username": "automatic",
-      "userUid": "automatic",
-      "userGid": "automatic"
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "nvmVersion": "latest",
+      "version": "lts"
     }
-  }
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
+  },
+  "forwardPorts": [
+    4000
+  ],
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+  "name": "Jekyll",
+  "postCreateCommand": "zsh scripts/devcontainer/postcreatecommand.sh",
+  "postStartCommand": "zsh scripts/devcontainer/poststartcommand.sh"
 }

@@ -8,12 +8,6 @@
     "**/.svn": true,
     "**/CVS": true,
     "**/Thumbs.db": true,
-    ".devcontainer": true,
-    ".github": true,
-    ".vscode": false,
-    "docs": true,
-    "infrastructure": true,
-    "scripts": true,
-    "tests": true
+    "helloworld": true
   }
 }
