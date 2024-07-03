@@ -12,12 +12,15 @@
     },
     "vscode": {
       "extensions": [
+        "AmazonWebServices.aws-toolkit-vscode",
         "alefragnani.bookmarks",
+        "chdsbd.github-code-owners",
         "davidanson.vscode-markdownlint",
         "dbaeumer.vscode-eslint",
         "donjayamanne.githistory",
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
+        "fvclaus.sort-json-array",
         "github.codespaces",
         "github.github-vscode-theme",
         "github.remotehub",

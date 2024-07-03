@@ -84,7 +84,9 @@
     "[json]": {
       "editor.wordWrap": "off",
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "window.title": "${separator}${activeRepositoryName}${separator}${activeRepositoryBranchName}${separator}[${remoteName}]",
+    "window.titleSeparator": " : "
   },
   "extensions": {
     "recommendations": [
