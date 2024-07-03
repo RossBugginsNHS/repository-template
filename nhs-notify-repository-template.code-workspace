@@ -5,6 +5,10 @@
       "path": "."
     },
     {
+      "name": "Application Source Code",
+      "path": "./src"
+    },
+    {
       "name": "Docs",
       "path": "./docs"
     },
