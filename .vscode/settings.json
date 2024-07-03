@@ -14,7 +14,7 @@
     "docs": true,
     "infrastructure": true,
     "scripts": true,
-    "src": true,
+    "terraform": true,
     "tests": true
   }
 }

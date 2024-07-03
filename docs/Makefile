@@ -16,14 +16,14 @@ s serve:
 	bundle exec jekyll serve --trace --livereload
 
 define baseurlparam =
-$(if $(BASE_URL),-- --baseurl $(BASE_URL),-- --baseurl "/")
+$(if $(BASE_URL),-- --baseurl $(BASE_URL),-- --baseurl "")
 endef
 
 build: version
 	npm run build $(baseurlparam)
 
 debug: version
-	npm run debug $(baseurlparam)
+	npm run debug
 
 version:
 	touch _config.version.yml
@@ -31,9 +31,10 @@ version:
 		(cd .. && make version); \
 		ver=$$(head -n 1 ../.version 2> /dev/null || echo unknown); \
 		echo "version: $$ver" > _config.version.yml; \
-		echo "$(VERSION)" > .version; \
+		echo "$$ver" > .version; \
 	else \
 		echo "version: $(VERSION)" > _config.version.yml; \
 		echo "$(VERSION)" > .version; \
 	fi
+
 	echo "{ \"schemaVersion\": 1, \"label\": \"version\", \"message\": \"$$(head -n 1 .version 2> /dev/null || echo unknown)\", \"color\": \"orange\" }" > version.json

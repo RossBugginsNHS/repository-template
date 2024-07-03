@@ -1,4 +1,7 @@
 {
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -9,12 +12,10 @@
     },
     "vscode": {
       "extensions": [
-        "zoma.vscode-auto-open-workspace",
         "alefragnani.bookmarks",
         "davidanson.vscode-markdownlint",
         "dbaeumer.vscode-eslint",
         "donjayamanne.githistory",
-        "eamodio.gitlens",
         "editorconfig.editorconfig",
         "esbenp.prettier-vscode",
         "github.codespaces",
@@ -24,6 +25,8 @@
         "github.vscode-pull-request-github",
         "hediet.vscode-drawio",
         "johnpapa.vscode-peacock",
+        "joshx.workspace-terminals",
+        "maattdd.gitless",
         "mhutchie.git-graph",
         "ms-azuretools.vscode-docker",
         "ms-vscode-remote.remote-containers",
@@ -33,6 +36,7 @@
         "ms-vsliveshare.vsliveshare",
         "redhat.vscode-xml",
         "streetsidesoftware.code-spell-checker-british-english",
+        "takumii.markdowntable",
         "tamasfe.even-better-toml",
         "tomoki1207.pdf",
         "vscode-icons-team.vscode-icons",
@@ -41,8 +45,7 @@
         "yzane.markdown-pdf",
         "yzhang.dictionary-completion",
         "yzhang.markdown-all-in-one",
-        "joshx.workspace-terminals",
-        "takumii.markdowntable"
+        "zoma.vscode-auto-open-workspace"
       ],
       "settings": {
         "[makefile]": {
@@ -51,6 +54,7 @@
         },
         "autoOpenWorkspace.enableAutoOpenIfSingleWorkspace": true,
         "editor.formatOnSave": true,
+        "extensions.ignoreRecommendations": true,
         "files.insertFinalNewline": true
       }
     }
@@ -90,8 +94,10 @@
   "forwardPorts": [
     4000
   ],
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
   "name": "Jekyll",
   "postCreateCommand": "zsh scripts/devcontainer/postcreatecommand.sh",
-  "postStartCommand": "zsh scripts/devcontainer/poststartcommand.sh"
+  "postStartCommand": "zsh scripts/devcontainer/poststartcommand.sh",
+  "runArgs": [
+    "--platform=linux/amd64"
+  ]
 }

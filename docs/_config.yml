@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nhsdigital.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-collections_dir: _collections
+collections_dir: collections
 
 collections:
   notify-repos:
@@ -36,6 +36,7 @@ collections:
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  - jemoji
 
 color_scheme: nhs
 mermaid:
@@ -89,14 +90,13 @@ callouts:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-
 include:
   - .version
   - version.json
 exclude:
-  - Makefile
   - package-lock.json
   - package.json
+  - Makefile
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
