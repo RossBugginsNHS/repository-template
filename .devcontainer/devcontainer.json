@@ -9,8 +9,8 @@
     },
     "vscode": {
       "extensions": [
-        "AmazonWebServices.aws-toolkit-vscode",
         "alefragnani.bookmarks",
+        "AmazonWebServices.aws-toolkit-vscode",
         "chdsbd.github-code-owners",
         "davidanson.vscode-markdownlint",
         "dbaeumer.vscode-eslint",
