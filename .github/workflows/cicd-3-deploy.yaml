@@ -10,7 +10,12 @@ on:
         options:
           - "true"
           - "false"
+      version:
+          type: string
+          default: latest
+          description: "Install specific version"
 
+run-name: "Include prerelease: ${{ inputs.include_prereleases }} Version: ${{ inputs.version }} by @${{ github.actor }}"
 permissions:
   contents: read
   pages: write
@@ -84,7 +89,12 @@ jobs:
 
           release_version=$(echo $json | (jq -r '.[0].tagName'))
           if [[ $release_version == null ]]; then exit 1; else echo $release_version; fi
-          echo release_version=$(echo $release_version) >> $GITHUB_OUTPUT
+
+          if [[ ${{inputs.version}} == latest ]]; then
+            echo release_version=$(echo $release_version) >> $GITHUB_OUTPUT
+          else
+            echo release_version=$(echo ${{inputs.version}}) >> $GITHUB_OUTPUT
+          fi
 
       - name: "Get release version"
         id: download-asset
