@@ -1,4 +1,16 @@
-# Guide: Scan secrets
+---
+layout: page
+title:  Scan secrets
+parent: User Guides
+description:  Scan secrets
+summary:  Scan secrets
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
+---
+
+## Guide: Scan secrets
 
 - [Guide: Scan secrets](#guide-scan-secrets)
   - [Overview](#overview)

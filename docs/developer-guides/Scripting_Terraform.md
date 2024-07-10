@@ -1,17 +1,29 @@
-# Developer Guide: Scripting Terraform
+---
+layout: page
+title:  Scripting Terraform
+parent: Developer Guides
+description: Scripting Terraform
+summary: Scripting Terraform
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
+---
+
+## Developer Guide: Scripting Terraform
 
 - [Developer Guide: Scripting Terraform](#developer-guide-scripting-terraform)
-  - [Overview](#overview)
-  - [Features](#features)
-  - [Key files](#key-files)
-  - [Usage](#usage)
-    - [Quick start](#quick-start)
-    - [Your stack implementation](#your-stack-implementation)
-  - [Conventions](#conventions)
-    - [Secrets](#secrets)
-    - [Variables](#variables)
-    - [IaC directory](#iac-directory)
-  - [FAQ](#faq)
+- [Overview](#overview)
+- [Features](#features)
+- [Key files](#key-files)
+- [Usage](#usage)
+  - [Quick start](#quick-start)
+  - [Your stack implementation](#your-stack-implementation)
+- [Conventions](#conventions)
+  - [Secrets](#secrets)
+  - [Variables](#variables)
+  - [IaC directory](#iac-directory)
+- [FAQ](#faq)
 
 ## Overview
 

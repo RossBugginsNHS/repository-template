@@ -16,3 +16,10 @@ onboarding
 sed
 toolchain
 [A-Z]+s
+GitHub
+endraw
+draw.io
+endfor
+drawio
+rawContent
+endcapture
