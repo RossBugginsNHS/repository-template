@@ -63,7 +63,9 @@
     }
   },
   "features": {
-    "./nhsnotify": {},
+    "./nhsnotify": {
+      "version": "1.0.1"
+    },
     "ghcr.io/devcontainers/features/aws-cli:1": {
       "version": "latest"
     },
