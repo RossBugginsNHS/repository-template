@@ -1,4 +1,16 @@
-# Developer Guide: Scripting Docker
+---
+layout: page
+title:  Scripting Docker
+parent: Developer Guides
+description: Scripting Docker
+summary: Scripting Docker
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
+---
+
+## Developer Guide: Scripting Docker
 
 - [Developer Guide: Scripting Docker](#developer-guide-scripting-docker)
   - [Overview](#overview)

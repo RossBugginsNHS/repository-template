@@ -1,4 +1,16 @@
-# ADR-002: Scan repository for hard-coded secrets
+---
+layout: page
+title: ADR-002
+parent: ADRs
+description: Scan repository for hard-coded secrets
+summary: Scan repository for hard-coded secrets
+is_not_draft: false
+last_modified_date: 2024-05-28
+owner: Ross Buggins
+author: Ross Buggins
+---
+
+## ADR-002: Scan repository for hard-coded secrets
 
 >|              |                                                               |
 >| ------------ | ------------------------------------------------------------- |
@@ -11,18 +23,18 @@
 ---
 
 - [ADR-002: Scan repository for hard-coded secrets](#adr-002-scan-repository-for-hard-coded-secrets)
-  - [Context](#context)
-  - [Decision](#decision)
-    - [Assumptions](#assumptions)
-    - [Drivers](#drivers)
-    - [Options](#options)
-    - [Outcome](#outcome)
-    - [Rationale](#rationale)
-  - [Consequences](#consequences)
-  - [Compliance](#compliance)
-  - [Notes](#notes)
-  - [Actions](#actions)
-  - [Tags](#tags)
+- [Context](#context)
+- [Decision](#decision)
+  - [Assumptions](#assumptions)
+  - [Drivers](#drivers)
+  - [Options](#options)
+  - [Outcome](#outcome)
+  - [Rationale](#rationale)
+- [Consequences](#consequences)
+- [Compliance](#compliance)
+- [Notes](#notes)
+- [Actions](#actions)
+- [Tags](#tags)
 
 ## Context
 
